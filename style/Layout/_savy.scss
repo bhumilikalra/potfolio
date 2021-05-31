@@ -1,0 +1,150 @@
+/* ==================== Savy Web App ========================== */
+
+.savy .home_section {
+    background-color: $green_color;
+    padding: 1rem;
+}
+.savy {
+    background-color: $green_color_light;
+}
+
+.savy .project_nav {
+    background-color: $green_color;
+}
+
+.mockup_inner h3 {
+    margin-top: 1.5rem;
+}
+
+h3 {
+    margin-top: 6rem;
+    font-size: 1.5rem;
+}
+
+.wireframes img {
+    box-shadow: 3px 3px 7px $shadow;
+}
+
+.mockup_inner {
+    display: grid;
+}
+
+.mockup_inner h3 {
+    text-align: center;
+    align-self: center;
+}
+
+
+
+@include responsive(mobile) {
+    .savy .project_content {
+        margin: 3rem;
+    }
+
+    .mockup_inner{
+        margin-top: 6rem;
+    }
+
+    .mockup_inner img {
+        order: 2;
+    }
+
+    .mockup_inner h3 {
+        order: 1;
+    }
+
+    .stickers img {
+        margin: 2rem;
+        width: 80%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .wireframes img {
+        margin-top: 1rem;
+    }
+}
+
+@include responsive(tab) {
+
+    /* ==== wireframes ==== */
+.savy .wireframes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10,.25fr);
+    grid-column-gap: 1rem ;
+}
+
+.savy .quiz_main {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.savy .quiz_questions {
+    grid-column: 2;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.savy .quiz_correct {
+    grid-column: 1;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+.savy .quiz_result {
+    grid-column: 2;
+    grid-row-start: 7;
+    grid-row-end: 10;
+}
+
+/* ==== Mockup ==== */
+.savy .mockup_inner {
+    grid-template-columns: 1fr 1fr;
+}
+
+.savy .mockup_inner {
+    background: linear-gradient($white_color 50%,$green_color 50%);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.savy .mockup_inner img {
+    align-self: center;
+}
+
+.savy .mockup_inner:nth-of-type(even) img {
+    grid-column: 2;
+    order: 2;
+}
+
+.savy .mockup_inner:nth-of-type(odd) img {
+    grid-column: 1;
+}
+
+.savy .mockup_inner:nth-of-type(odd) h3 {
+    grid-column: 2;
+    order: 1;
+}
+
+.savy .mockup_inner:nth-of-type(even) h3 {
+    grid-column: 1;
+}
+
+.savy.mockup_inner h3 {
+    font-size: 2rem;
+}
+
+/* ==== Stickers ==== */
+.stickers {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+}
+
+.stickers img {
+    align-self: center;
+    width: 100%;
+}
+}

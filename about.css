@@ -1,0 +1,13 @@
+/* ==================== About ========================== */
+.about {
+  padding: 3rem;
+  padding-top: 6rem;
+}
+
+.about_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .5fr 1fr;
+      grid-template-columns: .5fr 1fr;
+}
+/*# sourceMappingURL=about.css.map */

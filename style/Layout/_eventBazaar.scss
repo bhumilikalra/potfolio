@@ -1,0 +1,70 @@
+/* ==================== Event Bazaar
+========================== */
+
+.eventBazaar {
+    background-color: $blue_color_light;
+}
+
+.eventBazaar .home_section {
+    background-color: $blue_color;
+}
+
+.eventBazaar .project_nav {
+    background-color: $blue_color;
+}
+
+@include responsive(mobile) {
+    .eventBazaar .project_content {
+        margin: 3rem;
+    }
+    
+    .eventBazaar .home_section {
+        padding: 0;
+        margin: 2rem 0;
+    }
+}
+
+/* ==== List Points ==== */
+.eventBazaar li{
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+}
+@include responsive(tab) {
+    .project_content {
+        max-width: 800px;
+        margin: auto !important;
+    }
+}
+
+
+@include responsive(desktop) {
+    .cover {
+        width: 60%;
+        height: auto;
+        display: block;
+        margin: auto;
+
+    }
+}
+
+/* ==== Screens ===== */
+
+.redesign_screens p{
+    margin-top: 5rem;
+}
+
+.screen {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.screen img {
+    max-width: 10rem;
+    align-self: center;
+    margin: auto;
+}
+
+.old {
+    box-shadow: 3px 3px 7px $shadow; 
+}

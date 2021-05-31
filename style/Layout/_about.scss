@@ -1,0 +1,107 @@
+/* ==================== About ========================== */
+.about {
+    padding: 3rem;
+    padding-top: 3rem;
+}
+
+.about h3{
+    margin-top: 1rem;
+}
+
+/* ==== Social Link ====*/
+.about_me_image {
+    position: relative;
+}
+
+.social_links {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: $white_color_light;
+    padding: .5rem;
+    position: absolute;
+    width: 100%;
+    bottom: 3px;
+}
+
+.fa-linkedin {
+    color: #2867B2;
+}
+
+.fa-behance-square {
+    color: #053eff;
+}
+
+.fa-envelope {
+    color:  #BB001B;
+}
+.social_links i {
+    font-size: 2rem;
+}
+
+/* ==== Quote ==== */
+.quote {
+    border-left: .5rem solid $gray_color;
+    margin: 4rem 1rem;
+    quotes: "\201C""\201D""\2018""\2019";
+    padding: 2rem;
+
+}
+
+.quote::before {
+    color: $gray_color;
+    content: open-quote;
+    font-size: 8rem;
+    line-height: .5rem;
+    vertical-align: -0.4em;
+}
+
+.quote p {
+    display: inline;
+    font-size: 1.75rem;
+    color: $gray_color_text;
+
+}
+
+// ==== Large screen ====
+
+@include responsive(tab) {
+    .about {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about_container {
+       display: grid;
+       grid-template-columns: .5fr 1fr;
+       grid-column-gap: 2rem;
+    }
+
+    .about_me_image {
+        align-self: center;
+    }
+
+
+
+    // .about::after {
+    //     display: table;
+    //     content: "";
+    //     clear:both;
+    // }
+
+    // .myStory {
+    //     width: 60%;
+    //     margin: 0 0 40px;
+    //     float: right;
+    // }
+    
+    // .about_me_image {
+    //     position: fixed;
+    //     left: 10%;
+    //     width: 25%;
+    //     float: left;
+    // }
+
+
+}
+   

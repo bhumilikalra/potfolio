@@ -1,0 +1,40 @@
+/* ==================== Buddy ========================== */
+.buddy .home_section {
+    background-color: $orange_color;
+}
+
+.buddy {
+    background-color: $orange_color_light;
+}
+
+.buddy .project_nav {
+    background-color: $orange_color;
+}
+.buddy .persona img{
+    margin-bottom: 3rem;
+}
+
+@include responsive(mobile) {
+    .buddy .project_content {
+        margin: 3rem;
+    }
+    
+}
+
+@include responsive(tab) {
+    .buddy .wireframes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .buddy .persona {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

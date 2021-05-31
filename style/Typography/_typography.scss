@@ -1,0 +1,39 @@
+/* ==================== Typography ========================== */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+}
+
+.home_section p {
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.project_section p:nth-of-type(1) {
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.eb_points li {
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+}
+
+/* ===== Medium Screen ===== */
+
+@include responsive(tab) {
+    
+}
