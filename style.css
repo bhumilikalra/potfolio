@@ -810,8 +810,7 @@ i {
         grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
   }
-  .filmate .mockups h3,
-  .filmate .mockups p {
+  .filmate .mockups .mockup_text {
     grid-column: span 2;
   }
 }

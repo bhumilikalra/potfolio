@@ -61,12 +61,10 @@
         grid-gap: 2rem;
     }
 
-    .filmate .mockups {
-        h3, 
-        p {
+    
+    .filmate .mockups .mockup_text {
             grid-column: span 2;
         }
-    }
 }
 
 
