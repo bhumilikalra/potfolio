@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/style.js"></script>
+
+    <!-- AOS linking -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -30,35 +33,35 @@
     <main class="buddy">
         <section class="home_section">
             <div class="inner_home_section">
-                <img src="images/buddy/buddyCover.png" alt="buddyCover" class="cover">
+                <img src="images/buddy/buddyCover.png" alt="buddyCover" class="cover" data-aos="fade-in" data-aos-easing="ease-in-out">
             </div>  
         </section>
 
         <section class="project_content">
-            <h2 class="project_name">Buddy</h2>
-            <span>UX Design</span>
+            <h2 class="project_name" data-aos="fade-in" data-aos-easing="ease-in-out">Buddy</h2>
+            <span data-aos="fade-in" data-aos-easing="ease-in-out">UX Design</span>
             <section class="project_explain">
-                <p>Buddy is phone gap application for international study or work permit holders who need help related to situations they may face on their arrival in Vancouver. This can range from helping finding a room to applying MSP. This application works as a volunteer platform listing volunteers available.</p>                  
+                <p data-aos="fade-up" data-aos-easing="ease-in-out">Buddy is phone gap application for international study or work permit holders who need help related to situations they may face on their arrival in Vancouver. This can range from helping finding a room to applying MSP. This application works as a volunteer platform listing volunteers available.</p>                  
             </section>
             
-            <h3>Persona</h3>
-            <p>The user research resulted in having the focus on two primary users to target and to understand their needs and frustrations points, I worked on creating the persona featuring from two different area of an international immigrant landing in Vancouver.</p>
+            <h3 data-aos="fade-in" data-aos-easing="ease-in-out">Persona</h3>
+            <p data-aos="fade-up" data-aos-easing="ease-in-out">The user research resulted in having the focus on two primary users to target and to understand their needs and frustrations points, I worked on creating the persona featuring from two different area of an international immigrant landing in Vancouver.</p>
             <section class="persona">
-                <img src="images/buddy/Student.jpg" alt="student persona">
-                <img src="images/buddy/Work.jpg" alt="work persona">
+                <img src="images/buddy/Student.jpg" alt="student persona" data-aos="fade-left" data-aos-easing="ease-in-out">
+                <img src="images/buddy/Work.jpg" alt="work persona" data-aos="fade-right" data-aos-easing="ease-in-out">
             </section>
 
-            <h3>Wireframes</h3>
-            <p>The application has two interfaces, seeker for the international person who is new to Vancouver and the volunteer who is living in Vancouver and efficient enough to provide help to new comers with all possible aspects. </p>
+            <h3 data-aos="fade-in" data-aos-easing="ease-in-out">Wireframes</h3>
+            <p data-aos="fade-up" data-aos-easing="ease-in-out">The application has two interfaces, seeker for the international person who is new to Vancouver and the volunteer who is living in Vancouver and efficient enough to provide help to new comers with all possible aspects. </p>
             <section class="wireframes">
                <div class="seeker">
                     <h3>Seeker</h3>
-                    <img src="images/buddy/seeker.png" alt="seeker">
+                    <img src="images/buddy/seeker.png" alt="seeker" data-aos="fade-up" data-aos-easing="ease-in-out">
                 </div>
 
                 <div class="volt">
                     <h3>Volunteer</h3>
-                    <img src="images/buddy/volt.png" alt="volt">
+                    <img src="images/buddy/volt.png" alt="volt" data-aos="fade-up" data-aos-easing="ease-in-out">
                 </div>
             </section>
         </section>
@@ -77,5 +80,12 @@
         </ul>
         Designed and developed by <b><a href="about.html">Bhumili Kalra</a></b>
    </footer>
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init({
+        duration: 1200,
+     });
+   </script>
 </body>
 </html>        

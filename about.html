@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/style.js"></script>
+
+    <!-- AOS linking -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -31,43 +34,43 @@
         <div class="about_container">
             <!-- My Image -->
             <div class="about_me_image">
-                <div class="my_image"><img src="images/myImage.png" alt="myImage"></div>
+                <div class="my_image"><img src="images/myImage.png" alt="myImage" data-aos="fade-in" data-aos-easing="ease-in-out"></div>
                 <div class="social_links">
-                    <a href="https://www.linkedin.com/in/bhumilikalra"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/bhumilikalra"><i class="fab fa-linkedin" data-aos="fade-in" data-aos-easing="ease-in-out"></i></a>
                     
-                    <a href="https://www.behance.net/bhumilikalra"><i class="fab fa-behance-square"></i></a>
+                    <a href="https://www.behance.net/bhumilikalra" data-aos="fade-in" data-aos-easing="ease-in-out"><i class="fab fa-behance-square"></i></a>
 
-                    <a href="mailto:bk.bhumili@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:bk.bhumili@gmail.com"><i class="fas fa-envelope" data-aos="fade-in" data-aos-easing="ease-in-out"></i></a>
 
                 </div>
             </div>
 
             <!-- About Me -->
             <div class="myStory">
-                <h1>Hi! I am Bhumili Kalra</h1>
-                <h3><u>Here is me taking about myself</u></h3>
-                <p>An UI/UX designer who is striving to make best of opportunity. One can
+                <h1 data-aos="fade-in" data-aos-easing="ease-in-out">Hi! I am Bhumili Kalra</h1>
+                <h3 data-aos="fade-in" data-aos-easing="ease-in-out"><u>Here is me taking about myself</u></h3>
+                <p data-aos="fade-up" data-aos-easing="ease-in-out">An UI/UX designer who is striving to make best of opportunity. One can
                     easily find me attracted to the innovation. I believe in working in diverse environment building the
                     core values. </p>
 
-                <p>Starting with the pencil and sheet to design, upgrading the skills to fit in the new era of
+                <p data-aos="fade-up" data-aos-easing="ease-in-out">Starting with the pencil and sheet to design, upgrading the skills to fit in the new era of
                     digitalization invoked me to follow the passion of being a designer. When I work with designing the
                     focus is to have balance between simplicity and appealing. Along with designing the web and mobile
                     applications, I have learned HTML, CSS and Sass. I have even worked with popular CMS, WordPress developing one page marketing website theme. </p>
-                <p>
+                <p data-aos="fade-up" data-aos-easing="ease-in-out">
                     Let's have a tour to my projects. <a href="https://drive.google.com/drive/folders/1VksqlaHVu03a_7kGRtQT3sJlwPeQFG_h?usp=sharing" target="_blank"><b>Watch them here.</b></a>
                 </p>
             </div>
         </div>
 
         <div class="quote">
-            <p>
+            <p data-aos="fade-up" data-aos-easing="ease-in-out">
                 The meaning of life, is to give life meaning.
                 <spam>- Viktor Emil Frankl</spam>
             </p>
         </div>
 
-        <p>I love this quote and the moto is to implement it in life contributing to build the values to serve the society through every possible mean.
+        <p data-aos="fade-up" data-aos-easing="ease-in-out">I love this quote and the moto is to implement it in life contributing to build the values to serve the society through every possible mean.
             There are multiple way a person can have success, some find it in happiness and serving people whereas for others it could be having luxury. Everyone define their life with their own choices. For me it's solving people needs through my designs.
         </p>
        
@@ -81,6 +84,13 @@
         </ul>
         Designed and developed by <b><a href="about.html">Bhumili Kalra</a></b>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+         duration: 1200,
+      });
+    </script>
 </body>
 
 </html>
